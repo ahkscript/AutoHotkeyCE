@@ -1,4 +1,4 @@
-Note: AutoHotkeyCE / PocketPC and these are pages made by Micha - the original website is no longer available so this serves as an archive.
+Note: AutoHotkeyCE / PocketPC and these  made by Micha - the original website is no longer available so this serves as an archive.
 
 ![AutoHotkey Logo](AutoHotkey_logo.gif)
 
