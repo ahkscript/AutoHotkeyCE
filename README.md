@@ -43,8 +43,8 @@ A yet small list of "known" [working devices](WorkingDevices.md)
 Unicode-Build 1.0.48.760:
 [AutohotkeyCEUni.cab](bin/AutoHotkeyCEUni.CAB)
 
-[Changelog](Changelog.md)
-[TODO list](TODO.md)
+* [Changelog](changelog.md)
+* [TODO list](todo.md)
 
 * * * * *
 
