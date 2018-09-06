@@ -1,3 +1,5 @@
+Note: AutoHotkeyCE / PocketPC and these are pages made by Micha - the original website is no longer available to this serves as an archive.
+
 ![AutoHotkey Logo](AutoHotkey_logo.gif)
 
 ![AHK CE GUI](ahkcegui.jpg)
