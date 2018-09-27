@@ -1,4 +1,4 @@
-Note: AutoHotkeyCE / PocketPC and these  made by Micha - the original website is no longer available so this serves as an archive.
+**Note:** AutoHotkeyCE / PocketPC and these pages made by Micha - the original website is no longer available so this serves as an archive. (HTML converted to markdown, "original" html pages are stored here https://github.com/ahkscript/AutoHotkeyCE/issues/1)
 
 ![AutoHotkey Logo](AutoHotkey_logo.gif)
 
