@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>AutohotkeyCE - Developerinfo</title>
+</head>
+<body>
+<table style="width: 1627px; height: 139px;">
+  <tbody>
+    <tr>
+      <td style="width: 297px;"><a href="http://www.autohotkey.com"><img style="border: 0px solid ; width: 228px; height: 133px;" src="img/AutoHotkey_logo.gif" alt="Mouse and keyboard macros and hotkeys."></a></td>
+      <td style="width: 1320px;">
+      <h1>Autohotkey build for CE devices<br>
+Infos about the solution.</h1>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<span class="postbody"><span style="color: red;"><a href="index.htm"><span style="color: rgb(0, 0, 0);">&lt;&lt;Back</span></a></span></span><br>
+<h3><big>Projects of the solution</big>:</h3>
+The solution contains the projects:<br>
+<ul>
+  <li><span style="font-weight: bold;">Aut2Exe_VC8</span> : the compiler<br>
+  </li>
+  <li><span style="font-weight: bold;">AutohotkeyCE</span>: Autohotkey and the self executing exe</li>
+  <li><span style="font-weight: bold;">lib_pcre:</span> regular expression</li>
+  <li><span style="font-weight: bold;">libCE:</span> Autohotkey is
+using a closed source lib. The compiler is using the library to append
+the script to the self executing exe. The self executing exe is using
+the lib to read the script from itself. This libaray is used for wince.
+If you build a win32 exe, the ahk-library is used.</li>
+  <li><span style="font-weight: bold;">AutohotkeyCE:</span> Setup for wince (create a cab for installing).</li>
+</ul>
+<h3><big>Build types</big>:</h3>
+There are <span style="font-weight: bold;">debug</span> and <span style="font-weight: bold;">release</span> configurations for<span style="font-weight: bold;"> win32</span> and <span style="font-weight: bold;">pocketPC</span> platforms. Autohotkey and the compiler are using these settings.<br>
+<span style="font-weight: bold;">HotkeySC</span> is the configuration for the self executing exe for both platforms.<br>
+<br>
+With these configurations you can build <br>
+* debug win32 <span style="font-weight: bold;">autohotkey</span><br>
+* release win32 <span style="font-weight: bold;">autohotkey</span><br>
+* debug pocketpc <span style="font-weight: bold;">autohotkey</span><br>
+* release pocketpc <span style="font-weight: bold;">autohotkey<br>
+</span><br>
+* win32 <span style="font-weight: bold;">self executing exe</span><br>
+* pocketpc <span style="font-weight: bold;">self executing exe<br>
+<br>
+* </span>debug win32 <span style="font-weight: bold;">compiler</span><br>
+* release win32 <span style="font-weight: bold;">compiler</span><span style="font-weight: bold;"><br>
+* </span>debug pocketpc <span style="font-weight: bold;">compiler</span><br>
+* release&nbsp;pocketpc <span style="font-weight: bold;">compiler</span><br>
+<br>
+If you want to compile a script on your computer and transfer the exe to your pocketpc you need an extra build type. <br>
+The compiler must run on your computer but has to use the special
+library to append the script in the same way the self executing exe is
+using&nbsp;to extract.<br>
+There's another build type <span style="font-weight: bold;">deb_win32CE.</span> That can be used to create a compiler for that case.<br>
+<br>
+<span class="postbody"><span style="color: red;"><a href="index.htm"><span style="color: rgb(0, 0, 0);">&lt;&lt;Back</span></a><br>
+</span></span>Last change: 13-06-09
+</body>
+</html>

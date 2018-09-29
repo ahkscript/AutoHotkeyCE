@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>AutoHotkeyCE - Free Mouse and Keyboard Macro Program with Hotkeys and AutoText for CE devices</title>
+
+  
+  <meta http-equiv="PICS-Label" content="(PICS-1.1 &quot;http://www.classify.org/safesurf/&quot; L gen true for &quot;http://www.autohotkey.com/&quot; r (SS~~000 1))">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="description" content="Free keyboard macro program. Supports hotkeys for keyboard, mouse, and joystick. Can expand abbreviations as you type them (AutoText).">
+  <meta name="keywords" content="hotkey,hotkeys,hot key,hot keys,macro,macros,keyboard macro,keyboard macros,mouse macro,download,shortcut,shortcuts,shortcut key,shortcut keys,keyboard shortcut,keyboard shortcuts,script,clipboard,rsi,automate,automation,button,buttons,keystroke,keystrokes,autotext,click,press,clicks,clicker,presses,keypress,volume,mute,remap,remapper,scripting,send keys,sendkeys">
+  <link rel="alternate" type="application/rss+xml" title="AutoHotkey Forum RSS" href="forum/rss.php">
+  <style type="text/css">
+<!--
+.logo {font-size:16px; font-weight:normal; line-height:2em}
+li {margin-top: 0.3em; margin-bottom: 0.3em;}
+.flags {margin-bottom: 1.5em;}
+.li2 {margin-top: 0.1em; margin-bottom: 0.1em; font-size: 94%}
+.size110 {font-size: 110%}
+-->
+  </style></head><body>
+<table style="width: 1627px; height: 139px;">
+
+  <tbody>
+    <tr>
+      <td style="width: 297px;"><a href="http://www.autohotkey.com/"><img src="img/AutoHotkey_logo.gif" alt="Mouse and keyboard macros and hotkeys." border="0" height="133" width="228"></a></td>
+      <td style="width: 1320px;">
+      <h1>Autohotkey build for CE devices</h1>
+      </td>
+ 
+    </tr>
+  
+  </tbody>
+</table>
+
+<img style="float: left; height: 265px; width: 223px;" src="img/ahkcegui.jpg" alt="" hspace="10" vspace="10"><br>
+
+Hi,<br>
+
+<span style="font-weight: bold;">here you can find&nbsp;a port of autohotkey for windows CE devices.</span> <br>
+
+<ul>
+<li>
+A lot of functions are working but there's a lot of work still undone.</li><li>Some things aren't working because wince does not support them (drive, recyclebin functions, environment...and others).</li><li>Some things must be rewritten because you need them on wince devices but they do not exist on win32 (tap and hold)<br>
+  </li>
+</ul>
+
+<br>
+
+The main aim is to port most commands of ahk. New wince features are at the end of the todo list.<br>
+
+<br>
+
+The source code is from Autohotkey 1.0.48.02 but this does not mean that everything is working yet.<br>
+03-04-10 Used Autohotkey_L (unicode) as source.<br>
+
+<h2>How to start:</h2>
+
+To make things easier for you there is a wince setup. The
+AutohotkeyCE.exe (shrinked with upx so the exe is just 312 KB on the
+file system) is&nbsp;wrapped with a cab file.&nbsp; <br>
+
+Just transfer the file to your CE device and run the cab file.
+AutohokeyCE.exe is installed in the program folder: "/program
+files/AutohotkeyCE/AutohotkeyCE.exe". <br>
+
+<br>
+
+The installer automatically registers the ahk extension so you can&nbsp;start your script directly just like on win32 systems.<br>
+
+To edit the script "pword" of the OS is used.<br>
+<br>
+<big style="font-weight: bold;">Please have a look at the 
+
+<a href="WorkingCommands.html">Working commands</a><br>
+<br>
+A yet small list of "known" <a href="Workingdevices.html">working devices</a><span style="text-decoration: underline;"></span></big>
+
+
+<h4>Downloads:</h4>Unicode-Build 1.0.48.760: <a href="bin/AutoHotkeyCEUni.CAB">AutohotkeyCEUni.cab</a><br><br>Not maintained NON-unicode build: V36: AutohotkeyCE.cab (not available at the moment)
+
+
+Source: SVN Repository on Autohotkey . net [no longer available]<br>
+
+
+Source unicode: SVN Repository on Autohotkey . net [no longer available]<br>
+
+<a href="#Compiler">Compiler</a>:&nbsp;<br>
+
+<br>
+
+<a href="Changelog.html">Changelog</a><br>
+
+<a href="TODO.html">TODO list</a><br>
+<br>
+
+<hr style="width: 100%; height: 2px;">The following ahk commands are <span style="font-weight: bold;">not supported</span> by the OS.<br>
+
+<span class="postbody"><span style="font-weight: bold;"></span></span>
+<ul>
+<li><span class="postbody">Drive: There are no drives on ce devices. The root starts with / and every file system is mounted there</span></li><li>Winset (Transparent, Transcolor): The api for WINSET does not
+exist on ce devices. There is a chance to rewrite the code to achive
+the same.&nbsp;</li><li>The following system folders do not exist on ce devices: <span class="postbody">A_appdata / A_AppDataCommon
+/&nbsp;</span><span class="postbody">A_AppData / A_AppDataCommon /
+A_DesktopCommon / A_StartMenuCommon / A_ProgramsCommon / A_StartupCommon</span></li><li>EnvSet: There are no environment variables on ce devices<span class="postbody"></span></li><li><span class="postbody">FileRecycle FileRecycleEmpty: No recycle bin found :-)</span></li><li><span class="postbody">A_TimeIdle/ A_TimeIdlePhysical</span></li><li><span class="postbody">RunAs: Are there users / groups on ce devices? I haven't found them on my PNA.</span></li><li><span class="postbody">Get / SetWorkingDir: The concept of the current folder does not exist<br>
+    </span></li>
+</ul>
+
+<span class="postbody">&nbsp;* a_iscompiled ComSpec A_Language&nbsp;
+A_IPAddress1-4&nbsp;
+DllCall RegisterCallback&nbsp; FileInstall&nbsp;&nbsp;
+<br>
+</span><br>
+
+<hr style="width: 100%; height: 2px;"><br>
+
+<h4><a name="Compiler"></a>Compiler:</h4>
+
+Edit 09-06-09 Now the compiler is working. You can compile your script directly on your device.<br>
+
+<br>
+
+Edit 23-05-09 <span style="font-weight: bold;" class="name">fincs </span><span class="name">sent
+me source code &nbsp;for the functions in the closed source dll. Now
+it's possible to compile a real ahk-compiler. In the download file is
+just a windows 32 exe. You can launch it, compile your script and
+transfer the resulting exe to the ce device. The compiled exe should
+run.<br>
+<br>
+You can compile windows 32 (ahk) text files or multibyte / unicode files (0xfffe)<br>
+The compiler is included within the installer.<br>
+</span>
+<span style="text-decoration: underline;"></span><br>
+
+<br>
+
+<a href="https://autohotkey.com/board/topic/24776-autohotkey-for-pocket-pcs-wince-smartphones/page-12?&#entry246660">The long version</a> of the explaination..<br>
+(original link http://www.autohotkey.com/forum/viewtopic.php?p=260966#260966)
+
+<br>
+
+<hr style="width: 100%; height: 2px;"><br>
+
+...<a href="Developerinfo.html">some short information for developers</a><br>
+
+<br>
+
+<br>
+
+<hr style="width: 100%; height: 2px;">Thanks:<br>
+
+Chris for Autohotkey.<br>
+
+Titan for this webspace (autohotkey . net).<br>
+
+Fincs for the code needed to create a compiler.<br>
+
+Barry for his help, bugfixes, funcions and infos <br>
+
+Sergeich for his script to register the ahk extension<br>
+and all others who helps on the forum to answer questions.<br>
+
+<br>
+
+If you have corrections, wishes or questions please leave me a pm.<br>
+
+Micha<br>
+
+Last change: 15-02-11<br>
+</body></html>

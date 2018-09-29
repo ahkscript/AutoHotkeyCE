@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>TODO</title></head><body>
+
+<span class="postbody"><span style="color: red;"><a href="index.htm"><span style="color: rgb(0, 0, 0);">&lt;&lt;Back</span></a><br>
+<br>
+<span style="color: rgb(1, 0, 0);">http://www.autohotkey.com/forum/viewtopic.php?p=342593#342593</span><br>
+<br>
+</span></span><span class="postbody"><br>
+However, if you try it again a second time, typing a shorter string into
+ the box (e.g. "<span style="font-weight: bold;">XYZ</span>"), the 
+"After" message box will appear with "<span style="font-weight: bold;">XYZ</span><span style="color: red;">123456</span>" in it... of course it should just be
+ "<span style="font-weight: bold;">XYZ</span>".
+<br>
+
+</span><br>
+<hr style="width: 100%; height: 2px;"><span class="postbody"><span style="color: red;"><br>
+</span></span><span class="postbody">http://www.autohotkey.com/forum/viewtopic.php?p=328862#328862<br>
+just found another problem I would be happy if someone knows a solution 
+for:
+<br>
+I want to replace the existing text/label of (alltogether <img src="http://www.autohotkey.com/forum/images/smiles/icon_cool.gif" alt="Cool" border="0"> text controls.
+<br>
+So within a loop I normally would do
+<br>
+
+<br>
+GuiControl,, MyTextControl, NewText or
+<br>
+GuiControl,Text , MyTextControl, NewText
+<br>
+
+<br>
+However on my device this leads to the new text written above the old 
+one.
+<br>
+What seems to miss is a kind of redrawing of the control:
+<br>
+If I hide the controls and show them again, the old text has vanished.
+<br>
+However this isn't really a solution as it makes the whole process very 
+slow...
+<br>
+So when looping over only 8 controls, it takes 1-2 seconds to refresh 
+the contents. Unfortunately I need them to be rather responsive as 
+they"re updated quite often (kinf of context buttons).
+<br>
+
+<br style="text-decoration: line-through;"><span style="text-decoration: line-through;">
+Another question - probably rather advonced - how do I get rid of the 
+tap and hold gesture? Sorry, I'm aware it was sure difficult to 
+implement, but in my case it's rather annoying (I'm trying kind of mouse
+ gestures).
+</span><br>
+
+</span><br>
+<hr style="width: 100%; height: 2px;"><span class="postbody"><span style="color: red;"><span style="color: rgb(1, 0, 0);">http://www.autohotkey.com/forum/viewtopic.php?p=311233#311233</span><br>
+</span></span><span class="postbody">Here is my script for importing certificates. 
+There are two CA's and one user's with private key. Sometimes it runs 
+properly and sometimes hangs on WinWaitActive (the WinActivate was not 
+enough)... What is kind of strange - the script usually hangs on 
+WinWaitActive,Import?
+<br>
+</span>
+<table align="center" border="0" cellpadding="3" cellspacing="1" width="90%">
+<tbody>	<tr>	  <td class="code">
+      <div>Send {LWin}<br>Sleep,1000<br>Send s<br>Sleep,1000<br>Send c<br>Sleep,1000<br>Send
+ c<br>Sleep,1000<br>Send {Enter}<br><br>WinActivate,Certificates<br>WinWaitActive,Certificates<br>Send
+ !i<br>WinActivate,Import</div>
+</td></tr></tbody>
+</table>
+<span class="postbody">It looks like there is really something wrong 
+with WinWaitActive.
+<br>
+I think the line
+<br>
+</span>
+<table align="center" border="0" cellpadding="3" cellspacing="1" width="90%">
+<tbody>	<tr>	  <td class="code"><div>048: WinWaitActive,Root,1 (159.99)</div></td>
+	</tr></tbody>
+</table>
+<span class="postbody">
+<br>
+should never be reported in the script log...
+</span>
+<hr style="width: 100%; height: 2px;"><span style="color: rgb(1, 0, 0);" class="postbody"><span class="">28-03-10</span></span><br>
+<span class="postbody">http://www.autohotkey.com/forum/viewtopic.php?p=298776#298776<br>
+<span style="color: red;"></span></span><span class="postbody"><span style="font-weight: bold;">A_ThisMenuItemPos</span>
+ not working. I am using it for dynamic menu's
+<br>
+is this on the list to add
+.i'm doing something like this:
+<br>
+</span>
+<table style="width: 729px; height: 285px;" align="center" border="0" cellpadding="3" cellspacing="1">
+<tbody>	<tr>	  <td class="code">
+      <div>menutest() {<br>CoordMode, Menu, Screen<br>&nbsp; &nbsp;Menu, test, 
+add, Test1, MenuHandler<br>&nbsp; &nbsp;Menu, test, add, Test2, MenuHandler<br>&nbsp; 
+&nbsp;Menu, test, add, Test3, MenuHandler<br>&nbsp; &nbsp;Menu, test, add, Test4, 
+MenuHandler<br>&nbsp; &nbsp;Menu, test, add, Test5, MenuHandler<br>&nbsp; &nbsp;Menu, test, 
+Show, 0, 380<br>&nbsp; &nbsp;return<br>&nbsp; &nbsp;}<br><br>MenuHandler:<br>&nbsp; &nbsp;{<br>&nbsp; 
+
+&nbsp;msgbox,% "A_ThisMenu:" A_ThisMenu " `nA_ThisMenuItemPos:" 
+A_ThisMenuItemPos "`n "%A_ThisMenu%%A_ThisMenuItemPos%Link<br>&nbsp; &nbsp;return<br>&nbsp;
+ &nbsp;}<br></div>
+</td>	</tr></tbody>
+</table>
+<span class="postbody">
+</span><br>
+<hr style="width: 100%; height: 2px;"><span class="postbody"><span style="color: red;"><br></span>19-12-09 Debugged a few days a phantom error. If you are
+using an emulator and pressing i.e. '&lt;' on the Windows keyboard the
+hotkey is not fired. If you're using the virtual keyboard of the
+emulator, the hotkey is working. Perhaps it's just an localization
+problem, because I'm using a german keyboard and the virtual keyboard
+of the emulator is an english one. Needs further investigation.<br>
+
+
+
+<br>
+</span>
+<hr style="width: 100%; height: 2px;">04-04-10 The compiler should use the provided icon file and not hardcoded the ahk-icon<span class="postbody"><br>
+
+
+------------------------------------------
+<br>
+
+
+Wishes from the community:
+<br>
+
+
+support "sdi"? windows
+<br>
+
+<br>
+<br>
+
+<br>
+
+</span><a href="index.htm"><span style="color: rgb(0, 0, 0);">&lt;&lt;Back</span></a><br>
+
+Last change: 19-12-09<br>
+
+</body></html>

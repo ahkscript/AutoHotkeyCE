@@ -1,0 +1,81 @@
+<p><a href="index.htm">&lt;&lt;Back</a><br /><br />     <a href="WorkingCommands.html">Working commands</a><br /><br /> Unicode Build:<br /></p>
+<ul>
+<li>(1.0.48.873) (21/10/10) Tried to improve performance for iniread/iniwrite. If using the simpleini-routines 200 entries lasts one minute. If using TextFile which can read non-/ and unicode files it lasts 4 minutes. Fixed URLDownloadToFile.<br /></li>
+<li>(1.0.48.760) (14/10/10) Fixed endless loop for command INIREAD if the file to read does not exist<br /></li>
+<li>(1.0.48.754) (13/10/10) Fixed Send, but still work left. Unicode and characters can be sent. Just english keyboard settings sends the correct data<br /></li>
+<li>(1.0.48.645) (09/09/10) Changed send to support unicode / send, {ASC xxx} is now sending unicode chars<br /></li>
+<li>(1.0.48.616) (05/09/10) Fixes ControlSend<br /></li>
+<li>(1.0.48.598) (03/09/10) Added new command &quot;RunAt&quot; (specific time or event)<br /></li>
+<li>(1.0.48.583) (03/09/10) Fixed #include. A_OSType &amp; version = WIN_CE<br /></li>
+<li>(1.0.48.473) (28/07/10) Fixed reading unicode scripts. Changed parsing the run command parameters.<br /></li>
+<li>(1.0.48.372) (19/06/10) Added new command to rotate the screen (ChangeDisplaySettings)<br /></li>
+<li>(1.0.48.300) (26/05/10) Fixed RunWait<br /></li>
+<li>(1.0.48.291 ) (25/50/10) Fixed memory leaks in RegRead / RegWrite functions</li>
+<li>(1.0.48.285) (25/05/10) Fixed  Binary Data. /<br /></li>
+<li>(1.0.48.250) (11/05/10) Fixed FileSetTime. Changed CreateFile parameters. // Fixed test script // Fixed Ceil // Fixed IniRead IniWrite IniDelete<br /></li>
+<li>(1.0.48.239) (10/05/05) Changed a lot of functions to allocate less stack space (TCHAR[10000]-&gt; new...) / Fixed compiler warnings / Fixes code analysis<br /></li>
+<li>(1.0.48.124) Fixed bug in compiled scripts<br /></li>
+<li>(1.0.48.119) The compiler is now using unicode. Before that change the script is appended to the exe as ansi. Now the appended script is unicode, too. Compiler can change the ahk-icon now.<br /></li>
+<li>(1.0.48.56) Fixed DllCall, DriveGet, Edit, WINCEUtil_Run (internal)</li>
+<li>(V3) Fixed ControlGetFocus.<br /></li>
+<li>(V2) Fixed reading long files. Fixed Peekmessage (needs CONFIG_WINCE being defined)</li>
+<li>(V1) Just compileable. Erased the working commands list. Testing each function from the beginning</li>
+</ul>
+<p><br /></p>
+<hr />
+<p><br /> (old ansi version)<br /><br /></p>
+<ul>
+<li>(v1) FileAppend MsgBox</li>
+<li>(V3) FileCopy, If, If between, if in, if contains, ifequal, ifgreater, ifinstring, ifless, ifwinactive, ifwinexist, Pause, return, loop, break, else, Expressions (a:=3 / b:= a*4), Gosub, Goto</li>
+<li>(v4) a_ahkPath a_ahkversion a_workingdir a_scriptdir a_scriptname a_scriptfullpath a_linenumber a_linefile a_thisfunc a_thislabel a_ahkversion a_ahkpath a_exitreason(?) a_YYYY A_MM A_DD a_MMMM a_MMM a_DDDD a_DDD a_Wday a_yday a_yweek a_hour a_min a_sec a_msec a_now a_nowutc a_tickcount A_IsSuspended A_BatchLines A_TitleMatchMode A_TitleMatchModeSpeed A_DetectHiddenWindows A_DetectHiddenText A_AutoTrim A_StringCaseSense A_FormatInteger A_FormatFloat A_KeyDelay A_WinDelay A_ControlDelay A_MouseDelay A_DefaultMouseSpeed A_Temp ~A_OSType ~A_OSVersion A_Language A_ComputerName A_WinDir A_UserName VarSetCapacity functions Labels Continue</li>
+<li>(v5) A_ProgramFiles ProgramFiles A_Desktop A_StartMenu A_Programs A_Startup A_MyDocuments A_ScreenWidth A_ScreenHeight ExitApp abs() FileExist() InStr() SubStr() StrLen() asc() chr() IsLabel() exp() Ceil() Floor() log() ln() mod() round() sqrt() sin() EnvAdd EnvSub is(float int, time...) Arrays FileGetAttrib Autotrim if.between</li>
+<li>(v6) Gui: Button, Text, Label, ComboBox; FileSetAttrib FileGetAttrib FileGetTime FileSetTime IfExist IfNotExist StringGetPos SetFormat FileCreateDir FileRemoveDir FormatTime DriveSpaceFree</li>
+<li>(v7) RegRead RegWrite FileRead FileReadLine InputBox ErrorLevel Loop(files &amp; folders) Loop(read file contents) Loop(parse a string) Loop(registry)<br /> FileCreateShortcut (only Target and Shortcutfile are supported)<br /> FileGetShortcut (Only OutTarget and OutDir are supported)<br /> ListLines ListVars IfMsgBox SetTimer Sleep Sort</li>
+<li>( v8 ) Transform</li>
+<li>(v9) Gui, Add (5%)</li>
+<li>(v10) IfWinExist WinActive WinExist WinActivate MouseClick Process(Exist) Run Send</li>
+<li>(v11) ControlGetText ControlGetFocus ControlFocus ControlSetText. Removed OS-dependencies, so AutohotkeyCE is working on PNA or other WinCE &quot;lite&quot; devices. StringGetPos / InStr() StringLeft StringLen / StrLen() StringLower StringMid / SubStr() StringReplace StringRight StringSplit StringTrimLeft StringTrimRight StringUpper </li>
+<li>(v12) WinClose WinGetActiveStats WinGetActiveTitle WinGet(ID, IDLast, PID, ProcessName, Count, List, MinMax, ControlList, Style, ExStyle) WinGetClass WinGetPos WinGetText WinGetTitle WinHide WinKill WinSetTitle WinSet(bottom, top, disable, enable, redraw?) WinWait WinWaitActive </li>
+<li>(v13) WinMove ControlGetPos WinWaitNotActive WinWaitClose FileCopyDir Process(Close, Wait), After you have registered the ahk-extension (with the 2 lines script above) you can start any ahk-file.<br /> Control: Check Uncheck Enable Disable Show Hide ShowDropDown HideDropDown<br /> FileDelete FileMoveDir ControlClick ControlMove SoundPlay SplitPath Random FileRemoveDir FileGetSize FileGetTime FileMove FileGetVersion SetTitleMatchMode CoordMode SetBatchLines StringCaseSense</li>
+<li>(v14) reload command.<br /> Starting a new instance of a thread kills the current one. This is working now. </li>
+<li>(v15) Clipboard functions. This was tricky, because the clipboard is unicode, but the ahk-variables are not. The locked clipboard-buffer is being returned and filled by ahk functions. If you try to write that chars the clipboard isn't able to handle this. The conversion has to be done by hand.<br /> Listview &lt;-&gt; Gui,Submit: conversion between unicode and char corrected. <br /> loop, \path\*.*, x, x fixed </li>
+<li>(v16) Clipboard functions Part2. When transfering huge strings from/to clipboard, the application crashes (stack overflow), so I had to rewrite these parts of the code</li>
+<li>(v17) things like send, {LWin Down}{vkc2sc065}{LWin up} are starting to work. (7%)</li>
+<li>(v18) Listview is working with longer texts than 128 bytes</li>
+<li>(v19) FileSelectFile</li>
+<li>(v20) menu + menu, tray: since (AFAIK) there's no &quot;right mouse click&quot; on a PDA, I'm using just the left click.Edit: Tap and hold must work to create a context menu</li>
+<li>(V21) fixed GetText of comboboxes, inputbox</li>
+<li>(V22) migrated code to AHK 1.0.48. Wish: rotate screens: Worked in emulator by using<br /></li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Code:</strong></td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+<ul>
+<li>(V23) Listview: Report view mode is working. Context menu is shown at the right lower corner now.</li>
+<li>(V24) RegExMatch / RegExReplace</li>
+<li>(V25) Gui, add, Picture is able to load a bitmap. Gui, Add, Picture, x1 y30 w100 h100, %a_scriptdir%\AHK2008.bmp<br /> Thanks to Berry who has done the following things: <br /> - Fix: BIV_ScriptFullPath and beep.<br /> - New: Full support for INI-commands by using open source code. (Read, Write, Delete).</li>
+<li>(V26) RegWrite / RegRead / RegDelete /<br /> Soundplay (standard system sounds *-1 *16 ...) <br /> Shutdown (reboot + suspend)</li>
+<li>(V27) ControlGet, List, ComboBox + ListBox + SysListview / LV_ADD / LV_ModifyCol / -Multi / NoSortHdr/ a_gui / A_GuiWidth A_GuiHeight /<br /> Fix: ListLines / A_GUIControl / A_IsAdmin (=true) /<br /> Fix: context menu :Edit script</li>
+<li>(V28) Reorganized the whole project structure. You can build debug/release for CE/win32 and the compiler<br /> The compiler is working now on ce devices. Updated the installer.</li>
+<li>(V29) Fixed Control, Add, x, ListBox / Fixed Control, EditPaste / Added Tap&amp;Hold / Fixed EnumChildFind so finding a window with a window text is working now. /<br /> Fixed Gui, Add, CheckBox / Fixed Gui, Add, Radio / Fixed Gui, Add, DateTime + ListView + TreeView (width)<br /> Fixed LV_Add (only first column was set correctly) / Fixed ControlGet, var, LINE</li>
+<li>(V30) Fixed Click / Checked CoordMode / Fixed DriveGet Capacity / Fixed Edit / Fixed Group command (crash with GroupDeactivate and GroupClose,all)</li>
+<li>(V31) Fixed &quot;Control, ChooseString&quot;.<br /> Fincs provided the complete code for DllCall.  Thank you very much<br />Fixed crash in internal function searchwindow.<br /> Fixed Run, /xxx/name.cab. Run was not able to start i.e. an document.<br /> Fixed WinWaitActive / Fixed ControlGet FindString / Fixed ControlGet Choice<br /> Fixed ReadRegString. Fincs reported a bug with a_ComputerName. While reading the value from the registry the conversation between char and WCHAR was missed. This fix should solve a few other bugs, too / Fixed SendMessageTimeout. A lot of times the unsupported value SMTO_ABORTIFHUNG was used. / Fixed SplitPath (crash)</li>
+<li>(V32) (V62 SVN) Fixed RegWrite,REG_MULTI_SZ / Fixed Run / Fixed dllcall (unicode) / Fixed Control,ChooseString<br /></li>
+<li>(V33) Fixed GuiControlGet,&lt;blank&gt; / Fixed GuiControlGet, OutputVar, Focus / Fixed IniDelete when trying to delete a not existing key</li>
+<li>(V34) Fixed A_ThisMenuItemPos</li>
+<li>(V35) Some didn't want tap-and-hold turned always on. I've added the directive #DisableTapAndHold.</li>
+<li>(V36) Fixed variables containing text of a giucontrol. If you enter an long text and then a short text, the string wasn't shorten.<br /></li>
+</ul>
+<h2>Knows bugs / problems</h2>
+<ul>
+<li>PixelGetColor and Click aren't working for 640x480. 1x1=2x2. Click, 1,1 -&gt; = Click, 2,2 / Futurity: I used WinGetPos to get the windows position and size:<br /> Here are the results:<br /> Actual resolution of 800x480 is shown as 400x240 - FAIL<br /> Actual resolution of 640x480 is shown as 320x240 - FAIL<br /> Actual resolution of 400x240 is shown as 400x240 - PASS</li>
+<li>Futurity: SendMessage FAIL PostMessage FAIL ControlSend FAIL ControlFocus FAIL</li>
+<li><strong>emmanuel d:</strong> A_ThisMenuItemPos not working i am using it for dynamic menu's</li>
+<li>WinWaitActive must be checked<br /></li>
+</ul>
+<p><br /> <a href="index.htm">&lt;&lt;Back</a><br /> Last change: 21-10-10<br /></p>

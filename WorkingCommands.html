@@ -1,0 +1,2146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>What is working</title>
+  
+
+  
+  
+  <style type="text/css">
+pre.clsCode {
+  font-size: 110%;
+}
+pre.clsSyntax {
+  font-size: 100%;
+}
+td div.clsBeta {
+  display: none;
+}
+a:link {
+  color: #0000ff;
+  text-decoration: underline;
+}
+a:visited {
+  color: #0000ff;
+  text-decoration: underline;
+}
+a:hover {
+  color: #3366ff;
+  text-decoration: underline;
+}
+span.colorred {
+  color: #ff0000;
+}
+span.colorgreen {
+  color: #33cc00;
+}
+
+  </style>
+  
+  <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css"></head><body class="colorred">
+<table>
+
+  <tbody>
+    <tr>
+      <td style="width: 297px;"><a href="http://www.autohotkey.com/"><img src="img/AutoHotkey_logo.gif" alt="Mouse and keyboard macros and hotkeys." border="0" height="133" width="228"></a></td>
+      <td style="width: 1320px;">
+      <h1>Autohotkey build for CE devices</h1>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="postbody"><span style="color: red;"></span></span><a href="index.htm"><span style="color: rgb(0, 0, 0);">&lt;&lt;Back</span></a>
+<h1>What is working so far...</h1>
+
+The working commands were tested with the script "autohotkeyce.ahk",
+included with the installer <br>
+
+<span class="colorgreen">Green</span>: Command is working. Tested with
+the function "Test
+function"<br>
+
+<span class="colorred">Red:</span>&nbsp;Command is not
+working. The reason is explained in the column Description<br>
+
+Black: Unknown/untesed so far.<br>
+
+<br>
+
+<h1>Command List <small><small>(from the ahk help)</small></small><br>
+</h1>
+
+<table border="1" cellpadding="3" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td bgcolor="#000099" height="16" width="25%"><span style="color: rgb(255, 255, 255);"><strong>Command</strong></span></td>
+      <td style="width: 457px;" bgcolor="#000099" height="16"><span style="color: rgb(255, 255, 255);"><strong>Description</strong></span></td>
+      <td style="width: 124px;" bgcolor="#000099" height="16"><span style="color: rgb(255, 255, 255);"><strong>Test function</strong></span></td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">{ ... }</span></td>
+      <td style="width: 457px;" height="16">A pair of braces denotes a
+block.
+Blocks are typically used with functions, Else, Loop, While-loop, and
+IF-commands.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">AutoTrim</span></td>
+      <td style="width: 457px;" height="16">Determines whether "Var1 =
+%Var2%"
+statements omit spaces and tabs from the beginning and end of Var2.</td>
+      <td style="vertical-align: top; width: 124px;">_autotrim()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">BlockInput</span></td>
+      <td style="width: 457px;" height="16">Disables or enables the
+user's
+ability to interact with the computer via keyboard and mouse.<br>
+      <span class="colorred">Minimum
+operating systems Windows 98, Windows 2000</span>&nbsp; </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Break</span></td>
+      <td style="width: 457px;" height="16">Exits (terminates) a loop.
+Valid
+inside any kind of loop.</td>
+      <td style="vertical-align: top; width: 124px;">_fileloop()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a href="ChangeDisplaySettings.html"><span class="colorgreen">ChangeDisplaySettings</span></a><br>
+      </td>
+      <td style="vertical-align: top;">Changes the screen rotation<span style="font-weight: bold;"><br>
+      </span></td>
+      <td style="vertical-align: top;">_ChangeDisplaySettings()<br>
+      </td>
+    </tr>
+<tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorred">Click</span></td>
+      <td class="colorred" style="width: 457px;" height="16">Clicks a
+mouse button at
+the
+specified coordinates. It can also hold down a mouse button, turn the
+mouse wheel, or move the mouse.<br>
+      <span class="colorred">Click without parameters is not working
+because GetCursorPos (API) is not supported. So moving the mouse
+relative is not working, too because we can't get the current position
+of the cursor.</span><br>
+      </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">ClipWait</span></td>
+      <td style="width: 457px;" height="16">Waits until the clipboard
+contains
+data.</td>
+      <td style="vertical-align: top; width: 124px;">_Clipwait()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Continue</span></td>
+      <td style="width: 457px;" height="16">Skips the rest of the
+current loop
+iteration and begins a new one. Valid inside any kind of loop.</td>
+      <td style="vertical-align: top; width: 124px;">_Continue()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><a href="Control.html">Control</a>&nbsp;<span class="colorgreen">(ok)</span></td>
+      <td style="width: 457px;" height="16">Makes a variety of changes
+to a
+control.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ControlClick</span></td>
+      <td style="width: 457px;" height="16">Sends a mouse button or
+mouse wheel
+event to a control.<br>
+      <span style="font-weight: bold;">Control-or-Pos</span>: <span class="colorgreen">xy, ClassNN, Text, HWND</span><br>
+      <span style="font-weight: bold;">WhichButton</span>: <span class="colorgreen">Left, Right (You can even use the right mouse
+button with ControlClick and catch it with OnMessage(0x204,
+"WM_RBUTTONDOWN") or GuiContextMenu:) ,</span> <span class="colorred">(X1,
+X2,
+Middle, Wheelup, Wheeldown, WheelLeft, WheelRight not supported by OS)</span><br>
+      <span style="font-weight: bold;">Options</span>: NA D U&nbsp;<span class="colorgreen">Pos Xn Yn</span><br>
+      <br>
+      </td>
+      <td style="vertical-align: top; width: 124px;">_ControlClick()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ControlFocus</span></td>
+      <td style="width: 457px;" height="16">Sets input focus to a given
+control
+on a window.</td>
+      <td style="vertical-align: top; width: 124px;">_ControlFocus()<br>
+_ControlSetText()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ControlGet</span></td>
+      <td style="width: 457px;" height="16">Retrieves various types of
+information about a control.<br>
+      <span class="colorgreen"><span style="font-weight: bold;">ControlGet,</span>
+Var, List, Selected | Colx | Count | Count Selected | Count Col,
+SysListView321<br>
+      </span><span class="colorgreen">Checked, Enabled, Visible, </span>Tab<span class="colorgreen">, FindString, Choice, LineCount, CurrentLine,
+CurrentCol, Line, Selected, Style, ExStyle, Hwnd</span><br>
+      <span class="colorgreen"></span> </td>
+      <td style="vertical-align: top; width: 124px;">_Controlget()<br>
+_Controlget1()<br>
+      <br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ControlGetFocus</span></td>
+      <td style="width: 457px;" height="16">Retrieves which control of
+the
+target window has input focus, if any.</td>
+      <td style="vertical-align: top; width: 124px;">_ControlGetFocus()<br>
+      <br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ControlGetPos</span></td>
+      <td style="width: 457px;" height="16">Retrieves the position and
+size of a
+control.</td>
+      <td style="vertical-align: top; width: 124px;">_ControlGetPos()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ControlGetText</span></td>
+      <td style="width: 457px;" height="16">Retrieves text from a
+control.</td>
+      <td style="vertical-align: top; width: 124px;">_ControlGetText()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ControlMove</span></td>
+      <td style="width: 457px;" height="16">Moves or resizes a control.</td>
+      <td style="vertical-align: top; width: 124px;">_ControlMove()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ControlSend</span>&nbsp;/
+ControlSendRaw </td>
+      <td style="width: 457px;" height="16">Sends simulated keystrokes
+to a
+window or control.</td>
+      <td style="vertical-align: top; width: 124px;">_ControlSetText()<br>
+</td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ControlSetText</span></td>
+      <td style="width: 457px;" height="16">Changes the text of a
+control.</td>
+      <td style="vertical-align: top; width: 124px;">_ControlSetText() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">CoordMode</td>
+      <td style="width: 457px;" height="16">Sets coordinate mode for
+various
+commands to be relative to either the active window or the screen.<br>
+ToolTip, Pixel, Mouse, Caret, Menu<br>
+</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred"><span class="colorgreen">Critical</span></span></td>
+      <td style="width: 457px;" height="16">Prevents the current thread
+from
+being interrupted by other threads.<br>
+      <br>
+</td>
+      <td style="vertical-align: top; width: 124px;">_Critical()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">DetectHiddenText</span></td>
+      <td style="width: 457px;" height="16">Determines whether
+invisible text in
+a window is "seen" for the purpose of finding the window. This affects
+commands such as IfWinExist and WinActivate.</td>
+      <td style="vertical-align: top; width: 124px;">_DetectHiddenText()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">DetectHiddenWindows</span></td>
+      <td style="width: 457px;" height="16">Determines whether
+invisible windows
+are "seen" by the script.</td>
+      <td style="vertical-align: top; width: 124px;">_DetectHiddenWindow()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">DllCall()</span></td>
+      <td style="width: 457px;" height="16">Calls a function inside a
+DLL, such
+as a standard Windows API function.<br>
+      <span style="font-weight: bold;" class="colorred"></span><span style="font-weight: bold;">Thanks to fincs for providing the code</span><br>
+      </td>
+      <td style="vertical-align: top; width: 124px;">_DllCall()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">Drive</span></td>
+      <td style="width: 457px;" height="16">Ejects/retracts the tray in
+a CD or
+DVD drive, or sets a drive's volume label.<br>
+      <span class="colorred">Not supported by OS</span><br>
+      </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">DriveGet</span></td>
+      <td style="width: 457px;" height="16">Retrieves various types of
+information about the computer's drive(s).<br>
+      <span class="colorred">List: There are no drive letters on this
+OS. <br>
+      <span class="colorgreen">Capacity</span><br>
+Filesystem, Label, Serial: GetVolumeInformation not supported by the OS<br>
+Type: GetDriveType </span><span class="colorred">not supported by the
+OS<br>
+      <span class="colorgreen">Status</span><br>
+StatusCD: </span><span class="colorred"></span><span class="colorred">not
+supported by the OS<br>
+      </span></td>
+      <td style="vertical-align: top; width: 124px;">_driveGet()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">DriveSpaceFree</span></td>
+      <td style="width: 457px;" height="16">Retrieves the free disk
+space of a
+drive, in Megabytes.</td>
+      <td style="vertical-align: top; width: 124px;">_driveGet() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="colorgreen" height="16"><span class="colorgreen">Edit</span></td>
+      <td style="width: 457px;" height="16">Opens the current script
+for editing
+in the associated editor.</td>
+      <td style="vertical-align: top; width: 124px;">_Edit()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Else</span></td>
+      <td style="width: 457px;" height="16">Specifies the command(s) to
+perform
+if an IF-statement evaluates to FALSE. When more than one command is
+present, enclose them in a block (braces).</td>
+      <td style="vertical-align: top; width: 124px;">_If()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">EnvAdd</span></td>
+      <td style="width: 457px;" height="16">Sets a variable to the sum
+of itself
+plus the given value (can also add or subtract time from a date-time
+value). Synonymous with: var += value</td>
+      <td style="vertical-align: top; width: 124px;">_env()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">EnvDiv</span></td>
+      <td style="width: 457px;" height="16">Sets a variable to itself
+divided by
+the given value. Synonymous with: var /= value</td>
+      <td style="vertical-align: top; width: 124px;">_env() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">EnvGet</span></td>
+      <td style="width: 457px;" height="16">Retrieves an environment
+variable.<br>
+      <span class="colorred">Environment variables are not supported by
+the OS</span><br>
+      </td>
+      <td style="vertical-align: top; width: 124px;">&nbsp;<br>
+</td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">EnvMult</span></td>
+      <td style="width: 457px;" height="16">Sets a variable to itself
+times the
+given value. Synonymous with: var *= value</td>
+      <td style="vertical-align: top; width: 124px;">_env() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">EnvSet</span></td>
+      <td style="width: 457px;" height="16">Writes a value to a
+variable
+contained in the environment.<br>
+      <span class="colorred">Environment variables are not supported by
+the OS</span><br>
+      </td>
+      <td style="vertical-align: top; width: 124px;"> <br>
+</td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">EnvSub</span></td>
+      <td style="width: 457px;" height="16">Sets a variable to itself
+minus the
+given value (can also compare date-time values). Synonymous with: var
+-= value</td>
+      <td style="vertical-align: top; width: 124px;">_env() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">EnvUpdate</span></td>
+      <td style="width: 457px;" height="16">Notifies the OS and all
+running
+applications that environment variable(s) have changed.<br>
+      <span class="colorred">Environment variables are not supported by
+the OS</span><br>
+      </td>
+      <td style="vertical-align: top; width: 124px;">_env() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Exit</span></td>
+      <td style="width: 457px;" height="16">Exits the current thread or
+(if the
+script is not persistent contains no hotkeys) the entire script.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">ExitApp</span></td>
+      <td style="width: 457px;" height="16">Terminates the script
+unconditionally. </td>
+      <td style="vertical-align: top; width: 124px;">_ExitApp()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">FileAppend</span></td>
+      <td style="width: 457px;" height="16">Writes text to the end of a
+file
+(first creating the file, if necessary).</td>
+      <td style="vertical-align: top; width: 124px;">_FileAppendDelete()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileCopy</span></td>
+      <td style="width: 457px;" height="16">Copies one or more files.</td>
+      <td style="vertical-align: top; width: 124px;">_FileCopy()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">FileCopyDir</td>
+      <td class="colorred" style="width: 457px;" height="16"> Copies a
+folder
+along with
+all its
+sub-folders and files (similar to xcopy).<br>
+      <span class="colorred">Not working yet. GetLastError=2
+Requirements: <b>OS Versions:</b> Windows CE .NET 4.2 and later.</span>
+      </td>
+      <td style="vertical-align: top; width: 124px;">_FileCopyDir()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileCreateDir</span></td>
+      <td style="width: 457px;" height="16">Creates a folder.</td>
+      <td style="vertical-align: top; width: 124px;">_FileCreateDir()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileCreateShortcut</span></td>
+      <td style="width: 457px;" height="16">Creates a shortcut (.lnk)
+file.</td>
+      <td style="vertical-align: top; width: 124px;">_FileCreateShortcut()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">FileDelete</span></td>
+      <td style="width: 457px;" height="16">Deletes one or more files.</td>
+      <td style="vertical-align: top; width: 124px;">_FileAppendDelete()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">FileInstall</td>
+      <td style="width: 457px;" height="16">Includes the specified file
+inside
+the compiled version of the script.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileGetAttrib</span></td>
+      <td style="width: 457px;" height="16">Reports whether a file or
+folder is
+read-only, hidden, etc.</td>
+      <td style="vertical-align: top; width: 124px;">_FileSetGetAttrib()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileGetShortcut</span></td>
+      <td style="width: 457px;" height="16">Retrieves information about
+a
+shortcut (.lnk) file, such as its target file. </td>
+      <td style="vertical-align: top; width: 124px;">_FileCreateShortcut()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileGetSize</span></td>
+      <td style="width: 457px;" height="16">Retrieves the size of a
+file.</td>
+      <td style="vertical-align: top; width: 124px;">_FileGetSize()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileGetTime</span></td>
+      <td style="width: 457px;" height="16">Retrieves the datetime
+stamp of a
+file or folder.</td>
+      <td style="vertical-align: top; width: 124px;">_FileGetSetTime()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileGetVersion</span></td>
+      <td style="width: 457px;" height="16">Retrieves the version of a
+file. </td>
+      <td style="vertical-align: top; width: 124px;">_FileGetVersion()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="colorgreen" height="16"><span class="colorgreen">FileMove</span></td>
+      <td style="width: 457px;" height="16">Moves or renames one or
+more files.</td>
+      <td style="vertical-align: top; width: 124px;">_FileCopy()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileMoveDir</span></td>
+      <td style="width: 457px;" height="16"> Moves a folder along with
+all its
+sub-folders and files. It can also rename a folder.</td>
+      <td style="vertical-align: top; width: 124px;">_FolderCreateCopyDel()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">FileRead</span></td>
+      <td style="width: 457px;" height="16">Reads a file's contents
+into a
+variable.</td>
+      <td style="vertical-align: top; width: 124px;">_FileRead()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileReadLine</span></td>
+      <td style="width: 457px;" height="16">Reads the specified line
+from a file
+and stores the text in a variable.</td>
+      <td style="vertical-align: top; width: 124px;">_FileReadLine() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">FileRecycle</span></td>
+      <td style="width: 457px;" height="16">Sends a file or directory
+to the
+recycle bin, if possible.<br>
+      <span class="colorred">The recycle bin is not supported by the OS</span></td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">FileRecycleEmpty</span></td>
+      <td style="width: 457px;" height="16">Empties the recycle bin.<br>
+      <span class="colorred">The recycle bin is not supported by the OS</span><br>
+      </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileRemoveDir</span></td>
+      <td style="width: 457px;" height="16">Deletes a folder.</td>
+      <td style="vertical-align: top; width: 124px;">_FolderCreateCopyDel()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="14"><span class="colorgreen">FileSelectFile</span></td>
+      <td style="width: 457px;" height="14">Displays a standard dialog
+that
+allows the user to open or save file(s).</td>
+      <td style="vertical-align: top; width: 124px;">_FileSelectFile()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">FileSelectFolder</td>
+      <td style="width: 457px;" height="16">
+      <p>Displays a standard dialog that allows the user to
+select a folder.<br>
+      <span class="colorred">Not supported by Pocket PC 2003.</span> I try to load function dynamically, so if the function exists on your device FileSelectFolder should work.<br>
+      </p>
+      </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileSetAttrib</span></td>
+      <td style="width: 457px;" height="16">Changes the attributes of
+one or
+more files or folders. Wildcards are supported.</td>
+      <td style="vertical-align: top; width: 124px;">_FileSetGetAttrib()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FileSetTime</span></td>
+      <td style="width: 457px;" height="16">Changes the datetime stamp
+of one or
+more files or folders. Wildcards are supported.</td>
+      <td style="vertical-align: top; width: 124px;">_FileGetSetTime() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">FormatTime</span></td>
+      <td style="width: 457px;" height="16">Transforms a
+YYYYMMDDHH24MISS
+timestamp into the specified date/time format.</td>
+      <td style="vertical-align: top; width: 124px;">_FormatTime()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">GetKeyState</span></td>
+      <td style="width: 457px;" height="16">Checks if a keyboard key or
+mouse/joystick button is down or up. Also retrieves joystick status.</td>
+      <td style="vertical-align: top; width: 124px;">_GetKeyState()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Gosub</span></td>
+      <td style="width: 457px;" height="16">Jumps to the specified
+label and
+continues execution until Return is encountered.</td>
+      <td style="vertical-align: top; width: 124px;">_variables()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Goto</span></td>
+      <td style="width: 457px;" height="16">Jumps to the specified
+label and
+continues execution.</td>
+      <td style="vertical-align: top; width: 124px;">_variables() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">GroupActivate</span></td>
+      <td style="width: 457px;" height="16">Activates the next window
+in a
+window group that was defined with GroupAdd. </td>
+      <td style="vertical-align: top; width: 124px;">_Group()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">GroupAdd</span></td>
+      <td style="width: 457px;" height="16">Adds a window specification
+to a
+window group, creating the group if necessary. </td>
+      <td style="vertical-align: top; width: 124px;">_Group()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">GroupClose</span></td>
+      <td style="width: 457px;" height="16">Closes the active window if
+it was
+just activated by GroupActivate or GroupDeactivate. It then activates
+the next window in the series. It can also close all windows in a
+group. </td>
+      <td style="vertical-align: top; width: 124px;">_Group()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">GroupDeactivate</span></td>
+      <td style="width: 457px;" height="16">Similar to GroupActivate
+except
+activates the next window <strong>not</strong> in the
+group.</td>
+      <td style="vertical-align: top; width: 124px;">_Group()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">GUI</span></td>
+      <td class="colorgreen" style="width: 457px;" height="16">Creates and manages windows
+and
+controls. Such windows can be used as data entry forms or custom user
+interfaces.<br><span class="colorgreen">Edit, Text</span><br>
+      <span class="colorgreen">ListBox</span><br>
+      <span class="colorgreen">ListView, Button</span><br>
+      <span class="colorgreen">Picture</span><br>
+If you want to put controls on a tab control, please use Tab2<br>
+      </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      <br>
+_GuiListBox()<br>
+_GuiListBox()<br>
+_guiListView()<br>
+_GuiAddPicture()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><a href="GuiControl.html">GuiControl<span class="colorgreen"> (Ok)</span><br>
+      </a></td>
+      <td style="width: 457px;" height="16">Makes a variety of changes
+to a
+control in a GUI window. <br>
+      </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">GuiControlGet</span></td>
+      <td class="colorgreen" style="width: 457px;" height="16">Retrieves
+various types of
+information about a control in a GUI window.<br>
+      <span class="colorgreen">(blank) / Pos / Focus / FocusV /
+Enabled / Visible /Hwnd</span><br>
+      </td>
+      <td style="vertical-align: top; width: 124px;">_GuiControlGet()<br>
+      </td>
+    </tr>
+    
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Hotkey</span></td>
+      <td style="width: 457px;" height="16">Creates, modifies, enables,
+or
+disables a hotkey while the script is running.</td>
+      <td style="vertical-align: top; width: 124px;">_Hotkey()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">if</span></td>
+      <td style="width: 457px;" height="16">Specifies the command(s) to
+perform
+if the comparison of a variable to a value evalutes to TRUE. When more
+than one command is present, enclose them in a block (braces). </td>
+      <td style="vertical-align: top; width: 124px;">_if()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">if (expression)</span></td>
+      <td style="width: 457px;" height="16">Specifies the command(s) to
+perform
+if an expression evaluates to TRUE. </td>
+      <td style="vertical-align: top; width: 124px;">_if() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">If var [not] between</span></td>
+      <td style="width: 457px;" height="16">Checks whether a variable's
+contents
+are numerically or alphabetically between two values (inclusive).</td>
+      <td style="vertical-align: top; width: 124px;">_if() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">If var [not] in/contains MatchList</span> </td>
+      <td style="width: 457px;" height="16">Checks whether a variable's
+contents
+match one of the items in a list.</td>
+      <td style="vertical-align: top; width: 124px;">_if() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">If var is [not] type</span><br>
+      </td>
+      <td style="width: 457px;" height="16">Checks whether a variable's
+contents
+are numeric, uppercase, etc. </td>
+      <td style="vertical-align: top; width: 124px;">_if() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">IfEqual/IfNotEqual</span><br>
+      </td>
+      <td style="width: 457px;" height="16">Compares a variable to a
+value for
+equality. Synonymous with: if var = value | if var &lt;&gt;
+value</td>
+      <td style="vertical-align: top; width: 124px;">_if()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">IfExist / FileExist()</span>&nbsp;<br>
+      </td>
+      <td style="width: 457px;" height="16">Checks for the existence of
+a file
+or folder.</td>
+      <td style="vertical-align: top; width: 124px;">_run()<br>
+_funcs()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">IfGreater/IfGreaterOrEqual</span><br>
+      </td>
+      <td style="width: 457px;" height="16">Compares a variable to a
+value.
+Synonymous with: if var &gt; value | if var &gt;= value</td>
+      <td style="vertical-align: top; width: 124px;">_if()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">IfInString / InStr() </span><br>
+      </td>
+      <td style="width: 457px;" height="16">Checks if a variable
+contains the
+specified string.</td>
+      <td style="vertical-align: top; width: 124px;">_if()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">IfLess/IfLessOrEqual</span><br>
+      </td>
+      <td style="width: 457px;" height="16">Compares a variable to a
+value.
+Synonymous with: if var &lt; value | if var &lt;= value</td>
+      <td style="vertical-align: top; width: 124px;">_if()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">IfMsgBox</span><br>
+      </td>
+      <td style="width: 457px;" height="16">Checks which button was
+pushed by
+the user during the most recent MsgBox command.</td>
+      <td style="vertical-align: top; width: 124px;">_fileloop()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">IfWinActive / IfWinNotActive</span><br>
+      </td>
+      <td style="width: 457px;" height="16"> Checks if the specified
+window
+exists and is currently active (foremost).</td>
+      <td style="vertical-align: top; width: 124px;">_IfWinActive()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">IfWinExist / IfWinNotExist</span><br>
+      </td>
+      <td style="width: 457px;" height="16"> Checks if the specified
+window
+exists. </td>
+      <td style="vertical-align: top; width: 124px;">_gui()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">ImageSearch</td>
+      <td style="width: 457px;" height="16">Searches a region of the
+screen for
+an image.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">IniDelete</span></td>
+      <td style="width: 457px;" height="16">Deletes a value from a
+standard
+format .ini file.</td>
+      <td style="vertical-align: top; width: 124px;">_INI()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">IniRead</span></td>
+      <td style="width: 457px;" height="16">Reads a value from a
+standard format
+.ini file.</td>
+      <td style="vertical-align: top; width: 124px;">_INI()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">IniWrite</span></td>
+      <td style="width: 457px;" height="16">Writes a value to a
+standard format
+.ini file.</td>
+      <td style="vertical-align: top; width: 124px;">_INI()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">Input</span></td>
+      <td style="width: 457px;" height="16">Waits for the user to type
+a string
+(not supported on Windows 9x: it does nothing).&nbsp;<span class="colorred">So it's not supported by WINCE</span><br>
+</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">InputBox</span></td>
+      <td style="width: 457px;" height="16">Displays an input box to
+ask the
+user to enter a string.</td>
+      <td style="vertical-align: top; width: 124px;">_InputBox()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">KeyHistory</span></td>
+      <td style="width: 457px;" height="16">Displays script info and a
+history
+of the most recent keystrokes and mouse clicks.</td>
+      <td style="vertical-align: top; width: 124px;">_KeyHistory()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">KeyWait</span></td>
+      <td style="width: 457px;" height="16">Waits for a key or
+mouse/joystick
+button to be released or pressed down.</td>
+      <td style="vertical-align: top; width: 124px;">uncomment ;_KeyWait() -&gt;<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">LeftClick</td>
+      <td style="width: 457px;" height="16">[Obsolete -- use Click for
+greater
+flexibility]</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">LeftClickDrag</td>
+      <td style="width: 457px;" height="16"> [Obsolete -- use
+MouseClickDrag for
+greater flexibility]</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ListHotkeys</span></td>
+      <td style="width: 457px;" height="16">Displays the hotkeys in use
+by the
+current script, whether their subroutines are currently running, and
+whether or not they use the keyboard or mouse hook.</td>
+      <td style="vertical-align: top; width: 124px;">_ListHotkeys()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ListLines</span></td>
+      <td style="width: 457px;" height="16">Displays the script lines
+most
+recently executed. </td>
+      <td style="vertical-align: top; width: 124px;">_ListLines()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">ListVars</span></td>
+      <td style="width: 457px;" height="16">Displays the script's
+variables:
+their names and current contents.</td>
+      <td style="vertical-align: top; width: 124px;">_ListVars()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Loop (normal)</span> </td>
+      <td style="width: 457px;" height="16">Perform a series of
+commands
+repeatedly: either the specified number of times or until break is
+encountered. </td>
+      <td style="vertical-align: top; width: 124px;">_loop()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Loop (files &amp; folders)</span> </td>
+      <td style="width: 457px;" height="16">Retrieves the specified
+files or
+folders, one at a time.</td>
+      <td style="vertical-align: top; width: 124px;">_FileLoop()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Loop (parse a string)</span> </td>
+      <td style="width: 457px;" height="16">Retrieves substrings
+(fields) from a
+string, one at a time.</td>
+      <td style="vertical-align: top; width: 124px;">_LoopParse()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Loop (read file contents)</span></td>
+      <td style="width: 457px;" height="16">Retrieves the lines in a
+text file,
+one at a time (performs better than FileReadLine).</td>
+      <td style="vertical-align: top; width: 124px;">_LoopReadFile()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Loop (registry)</span></td>
+      <td style="width: 457px;" height="16">Retrieves the contents of
+the
+specified registry subkey, one item at a time. </td>
+      <td style="vertical-align: top; width: 124px;">_LoopRegistry()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Menu</span></td>
+      <td style="width: 457px;" height="16">Creates, deletes, modifies
+and
+displays menus and menu items. Changes the tray icon and its tooltip.
+Controls whether the main window of a compiled script can be opened. </td>
+      <td style="vertical-align: top; width: 124px;">_MenuTest()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">MouseClick</td>
+      <td style="width: 457px;" height="16">Clicks or holds down a
+mouse button,
+or turns the mouse wheel. NOTE: The Click command is generally more
+flexible and easier to use.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">MouseClickDrag</td>
+      <td style="width: 457px;" height="16">Clicks and holds the
+specified mouse
+button, moves the mouse to the destination coordinates, then releases
+the button.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">MouseGetPos</td>
+      <td style="width: 457px;" height="16">Retrieves the current
+position of
+the mouse cursor, and optionally which window and control it is
+hovering over.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">MouseMove</td>
+      <td style="width: 457px;" height="16">Moves the mouse cursor.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">MsgBox</span></td>
+      <td style="width: 457px;" height="16">Displays the specified text
+in a
+small window containing one or more buttons (such as Yes and No).</td>
+      <td style="vertical-align: top; width: 124px;">_MsgBox()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">OnExit</span></td>
+      <td style="width: 457px;" height="16">Specifies a subroutine to
+run
+automatically when the script exits.</td>
+      <td style="vertical-align: top; width: 124px;">_OnExit()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">OnMessage()</span></td>
+      <td style="width: 457px;" height="16">Specifies a function to
+call
+automatically when the script receives the specified message.</td>
+      <td style="vertical-align: top; width: 124px;">_wm_LeftButtonDown()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">OutputDebug</td>
+      <td style="width: 457px;" height="16">Sends a string to the
+debugger (if
+any) for display.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Pause</span></td>
+      <td style="width: 457px;" height="16">Pauses the script's current
+thread.</td>
+      <td style="vertical-align: top; width: 124px;">_Pause()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">PixelGetColor</span></td>
+      <td style="width: 457px;" height="16">Retrieves the color of the
+pixel at
+the specified x,y coordinates.</td>
+      <td style="vertical-align: top; width: 124px;">_PixelGetColor()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">PixelSearch</span></td>
+      <td style="width: 457px;" height="16">Searches a region of the
+screen for
+a pixel of the specified color.<br>
+      <span class="colorred">GetDIBits does not exist on WinCE</span><br>
+</td>
+      <td style="vertical-align: top; width: 124px;">_PixelSearch()<br>
+
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">PostMessage</td>
+      <td style="width: 457px;" height="16">Places a message in the
+message
+queue of a window or control.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Process</span></td>
+      <td style="width: 457px;" height="16">Performs one of the
+following
+operations on a process: checks if it exists; changes its priority;
+closes it; waits for it to close.<br>
+      <span class="colorgreen">Exist, Close</span>, List,&nbsp;<span class="colorred">Priority </span><span class="colorred">(Windows CE does not support the concept of a priority class)</span>, Wait,&nbsp;<span class="colorgreen">Waitclose</span><br>
+</td>
+      <td style="vertical-align: top; width: 124px;">_Process()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">Progress</td>
+      <td style="width: 457px;" height="16">Creates or updates a window
+containing a progress bar.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Random</span></td>
+      <td style="width: 457px;" height="16">Generates a pseudo-random
+number.</td>
+      <td style="vertical-align: top; width: 124px;">_Random()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">RegExMatch()</span></td>
+      <td style="width: 457px;" height="16">Determines whether a string
+contains
+a pattern (regular expression).</td>
+      <td style="vertical-align: top; width: 124px;">_RegExMatch()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">RegExReplace()</span></td>
+      <td style="width: 457px;" height="16">Replaces occurrences of a
+pattern
+(regular expression) inside a string.</td>
+      <td style="vertical-align: top; width: 124px;">_RegExMatch() </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">RegDelete</span></td>
+      <td style="width: 457px;" height="16">Deletes a subkey or value
+from the
+registry.</td>
+      <td style="vertical-align: top; width: 124px;">_RegReadWrite()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">RegRead</span></td>
+      <td style="width: 457px;" height="16">Reads a value from the
+registry.</td>
+      <td style="vertical-align: top; width: 124px;">_RegReadWrite()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">RegWrite</span></td>
+      <td style="width: 457px;" height="16">Writes a value to the
+registry.</td>
+      <td style="vertical-align: top; width: 124px;">_RegReadWrite()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">RegisterCallback()</td>
+      <td style="width: 457px;" height="16">Creates a machine-code
+address that
+when called, redirects the call to a function in the script.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Reload</span></td>
+      <td style="width: 457px;" height="16">Replaces the currently
+running
+instance of the script with a new one.</td>
+      <td style="vertical-align: top; width: 124px;">_Reload()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">Repeat&#8230;EndRepeat<br>
+      </td>
+      <td style="width: 457px;" height="16">[Obsolete -- use Loop for
+greater
+flexibility]</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Return</span></td>
+      <td style="width: 457px;" height="16">Returns from a subroutine
+to which
+execution had previously jumped via function-call, Gosub, Hotkey
+activation, GroupActivate, or other means. </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">RightClick</td>
+      <td style="width: 457px;" height="16">[Obsolete -- use Click for
+greater
+flexibility]</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">RightClickDrag</td>
+      <td style="width: 457px;" height="16"> [Obsolete -- use
+MouseClickDrag for
+greater flexibility]</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Run</span></td>
+      <td style="width: 457px;" height="16">Runs an external program.</td>
+      <td style="vertical-align: top; width: 124px;">_Run()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">RunAs</span></td>
+      <td style="width: 457px;" height="16">Specifies a set of user
+credentials
+to use for all subsequent uses of Run and RunWait. Requires Windows
+2000/XP or later.<br>
+      <span class="colorred">Not supported by OS</span><br>
+      </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a href="RunAt.html">RunAt</a><br>
+      </td>
+      <td style="vertical-align: top;">Let the OS start an application at a specific time&nbsp; or deletes queued entries.<br>
+      </td>
+      <td style="vertical-align: top;">_RunAt()<br>
+      </td>
+    </tr>
+<tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">RunWait</span></td>
+      <td style="width: 457px;" height="16">Runs an external program
+and waits
+until it finishes.</td>
+      <td style="vertical-align: top; width: 124px;">_RunWait()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Send</span>&nbsp;/&nbsp;<span class="colorgreen">SendRaw</span>
+/&nbsp;<span class="colorred">SendInput</span> / SendPlay</td>
+      <td style="width: 457px;" height="16">Sends simulated keystrokes
+and mouse
+clicks to the active window.</td>
+      <td style="vertical-align: top; width: 124px;">_RotateScreenWithSend()<br>
+_SendRaw()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SendMessage</span></td>
+      <td style="width: 457px;" height="16">Sends a message to a window
+or
+control and waits for acknowledgement.</td>
+      <td style="vertical-align: top; width: 124px;">_SendMessage()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">SendMode</td>
+      <td style="width: 457px;" height="16">Makes Send synonymous with
+SendInput
+or SendPlay rather than the default (SendEvent). Also makes Click and
+MouseMove/Click/Drag use the specified method.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SetBatchLines</span></td>
+      <td style="width: 457px;" height="16">Determines how fast a
+script will
+run (affects CPU utilization).</td>
+      <td style="vertical-align: top; width: 124px;">_SetBatchlines()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SetCapslockState</span></td>
+      <td style="width: 457px;" height="16">Sets the state of the
+Capslock key.
+Can also force the key to stay on or off. </td>
+      <td style="vertical-align: top; width: 124px;">_SetKeyboardState()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SetControlDelay</span></td>
+      <td style="width: 457px;" height="16">Sets the delay that will
+occur after
+each control-modifying command.</td>
+      <td style="vertical-align: top; width: 124px;">_ControlMove()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">SetDefaultMouseSpeed</td>
+      <td style="width: 457px;" height="16">Sets the mouse speed that
+will be
+used if unspecified in Click and MouseMove/Click/Drag.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SetEnv (Var = Value)</span></td>
+      <td style="width: 457px;" height="16">Assigns the specified value
+to a
+variable.</td>
+      <td style="vertical-align: top; width: 124px;">_Env()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SetFormat</span></td>
+      <td style="width: 457px;" height="16">Sets the format of integers
+and
+floating point numbers generated by math operations.</td>
+      <td style="vertical-align: top; width: 124px;">_SetFormat()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SetKeyDelay</span></td>
+      <td style="width: 457px;" height="16">Sets the delay that will
+occur after
+each keystroke sent by Send or ControlSend.</td>
+      <td style="vertical-align: top; width: 124px;">_SetKeyDelay() <br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">SetMouseDelay</td>
+      <td style="width: 457px;" height="16">Sets the delay that will
+occur after
+each mouse movement or click.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SetNumlockState</span></td>
+      <td style="width: 457px;" height="16">Sets the state of the
+Numlock key.
+Can also force the key to stay on or off.</td>
+      <td style="vertical-align: top; width: 124px;">_SetKeyboardState()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SetScrollLockState</span></td>
+      <td style="width: 457px;" height="16">Sets the state of the
+Scrolllock
+key. Can also force the key to stay on or off.</td>
+      <td style="vertical-align: top; width: 124px;">_SetKeyboardState()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">SetStoreCapslockMode<br>
+      </td>
+      <td style="width: 457px;" height="16"> Whether to restore the
+state of
+CapsLock after a Send.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">SetTimer</span></td>
+      <td style="width: 457px;" height="16">Causes a subroutine to be
+launched
+automatically and repeatedly at a specified time interval.</td>
+      <td style="vertical-align: top; width: 124px;">_SetTimer()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">SetTitleMatchMode</span></td>
+      <td style="width: 457px;" height="16">Sets the matching behavior
+of the
+WinTitle parameter in commands such as WinWait.</td>
+      <td style="vertical-align: top; width: 124px;">_SetTitleMatchMode()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">SetWinDelay</span></td>
+      <td style="width: 457px;" height="16">Sets the delay that will
+occur after
+each windowing command, such as WinActivate. </td>
+      <td style="vertical-align: top; width: 124px;">_SetWinDelay()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">SetWorkingDir</span></td>
+      <td style="width: 457px;" height="16">Changes the script's
+current working
+directory.<br>
+      <span class="colorred">Current directory not supported by OS</span><br>
+ </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">Shutdown<br>
+</td>
+      <td style="width: 457px;" height="16">0&nbsp;<span class="colorred">= Logoff</span><br>
+1 =&nbsp;<span class="colorgreen">Shutdown</span><br>
+2 =&nbsp;<span class="colorgreen">Reboot</span><br>
+4 = Force<br>
+8 =&nbsp;<span class="colorred">Power down</span><br>
+</td>
+      <td style="vertical-align: top; width: 124px;">_Shutdown()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">Sleep</span></td>
+      <td style="width: 457px;" height="16">Waits the specified amount
+of time
+before continuing. </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Sort</span></td>
+      <td style="width: 457px;" height="16">Arranges a variable's
+contents in
+alphabetical, numerical, or random order (optionally removing
+duplicates).</td>
+      <td style="vertical-align: top; width: 124px;">_GuiComboSort()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SoundBeep</span></td>
+      <td style="width: 457px;" height="16">Emits a tone from the PC
+speaker.</td>
+      <td style="vertical-align: top; width: 124px;">_Beep()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">SoundGet</td>
+      <td style="width: 457px;" height="16">Retrieves various settings
+from a
+sound device (master mute, master volume, etc.)</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">SoundGetWaveVolume</td>
+      <td style="width: 457px;" height="16">Retrieves the wave output
+volume
+from a sound device.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SoundPlay</span></td>
+      <td style="width: 457px;" height="16">Plays a sound, video, or
+other
+supported file type. </td>
+      <td style="vertical-align: top; width: 124px;">_Beep()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorred">SoundSet</span></td>
+      <td style="width: 457px;" height="16">Changes various settings of
+a sound
+device (master mute, master volume, etc.)</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">SoundSetWaveVolume</td>
+      <td style="width: 457px;" height="16">Changes the wave output
+volume for a
+sound device. </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">SplashImage</td>
+      <td style="width: 457px;" height="16">Creates or updates a window
+containing a JPG, GIF, or BMP image.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">SplashTextOn</td>
+      <td style="width: 457px;" height="16">Creates a customizable text
+popup
+window.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">SplashTextOff</td>
+      <td style="width: 457px;" height="16">Closes the above window. </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">SplitPath</span></td>
+      <td style="width: 457px;" height="16">Separates a file name or
+URL into
+its name, directory, extension, and drive.</td>
+      <td style="vertical-align: top; width: 124px;">_SplitPath()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">StatusBarGetText</td>
+      <td style="width: 457px;" height="16">Retrieves the text from a
+standard
+status bar control.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">StatusBarWait</td>
+      <td style="width: 457px;" height="16">Waits until a window's
+status bar
+contains the specified string.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">StringCaseSense</td>
+      <td style="width: 457px;" height="16">Determines whether string
+comparisons are case sensitive (default is "not case sensitive"). </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">StringGetPos / InStr()</span></td>
+      <td style="width: 457px;" height="16">Retrieves the position of
+the
+specified substring within a string.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">StringLeft</span></td>
+      <td style="width: 457px;" height="16">Retrieves a number of
+characters
+from the left-hand side of a string.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">StringLen / StrLen()</span> </td>
+      <td style="width: 457px;" height="16">Retrieves the count of how
+many
+characters are in a string.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">StringLower</span></td>
+      <td style="width: 457px;" height="16">Converts a string to
+lowercase.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">StringMid / SubStr()</span> </td>
+      <td style="width: 457px;" height="16">Retrieves one or more
+characters
+from the specified position in a string.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">StringReplace</span></td>
+      <td style="width: 457px;" height="16">Replaces the specified
+substring
+with a new string. </td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">StringRight</span></td>
+      <td style="width: 457px;" height="16">Retrieves a number of
+characters
+from the right-hand side of a string.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">StringSplit</span></td>
+      <td style="width: 457px;" height="16">Separates a string into an
+array of
+substrings using the specified delimiters.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">StringTrimLeft</span></td>
+      <td style="width: 457px;" height="16">Removes a number of
+characters from
+the left-hand side of a string.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">StringTrimRight</span></td>
+      <td style="width: 457px;" height="16">Removes a number of
+characters from
+the right-hand side of a string.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">StringUpper</span></td>
+      <td style="width: 457px;" height="16">Converts a string to
+uppercase.</td>
+      <td style="vertical-align: top; width: 124px;">_Strings()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">Suspend</span></td>
+      <td style="width: 457px;" height="16">Disables or enables all or
+selected
+hotkeys and hotstrings.</td>
+      <td style="vertical-align: top; width: 124px;">_Suspend()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">SysGet</span></td>
+      <td style="width: 457px;" height="16">Retrieves screen
+resolution,
+multi-monitor info, dimensions of system objects, and other system
+properties.<br>
+      <span class="colorgreen">MonitorCount, MonitorPrimary, Monitor, MonitorWorkArea, MonitorName</span><br>
+</td>
+      <td style="vertical-align: top; width: 124px;">_SysGet()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">Thread</td>
+      <td style="width: 457px;" height="16">Sets the priority or
+interruptibility of threads. It can also temporarily disable all timers.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">ToolTip</td>
+      <td style="width: 457px;" height="16">Creates an always-on-top
+window
+anywhere on the screen.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">Transform</td>
+      <td style="width: 457px;" height="16">Performs miscellaneous math
+functions, bitwise operations, and tasks such as ASCII/Unicode
+conversion.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">TrayTip</td>
+      <td style="width: 457px;" height="16">Creates a balloon message
+window
+near the tray icon. Requires Windows 2000/XP or later. </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">UrlDownloadToFile</span></td>
+      <td style="width: 457px;" height="16">Downloads a file from the
+Internet. </td>
+      <td style="vertical-align: top; width: 124px;">_URLDownloadToFile()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">Var = value </td>
+      <td style="width: 457px;" height="16">Assigns the specified value
+to a
+variable.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">Var :=
+expression </td>
+      <td style="width: 457px;" height="16">Evaluates an expression and
+stores
+the result in a variable.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">VarSetCapacity()</td>
+      <td style="width: 457px;" height="16">Enlarges a variable's
+holding
+capacity or frees its memory. Normally, this is necessary only for
+unusual circumstances such as DllCall.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">While-loop</td>
+      <td style="width: 457px;" height="16">Performs a series of
+commands
+repeatedly until the specified expression evaluates to false.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">WinActivate</span></td>
+      <td style="width: 457px;" height="16">Activates the specified
+window
+(makes it foremost).</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">WinActivateBottom</td>
+      <td style="width: 457px;" height="16">Same as WinActivate except
+that it
+activates the bottommost (least recently active) matching window rather
+than the topmost.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">WinClose</span></td>
+      <td style="width: 457px;" height="16">Closes the specified window.</td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">WinGetActiveStats</span></td>
+      <td style="width: 457px;" height="16">Combines the functions of
+WinGetActiveTitle and WinGetPos into one command. </td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">WinGetActiveTitle</span></td>
+      <td style="width: 457px;" height="16">Retrieves the title of the
+active
+window. </td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">WinGetClass</span></td>
+      <td style="width: 457px;" height="16">Retrieves the specified
+window's
+class name.</td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">WinGet</span></td>
+      <td style="width: 457px;" height="16">Retrieves the specified
+window's
+unique ID, process ID, process name, or a list of its controls. It can
+also retrieve a list of all windows matching the specified criteria.</td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">WinGetPos</span></td>
+      <td style="width: 457px;" height="16">Retrieves the position and
+size of
+the specified window.</td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">WinGetText</span></td>
+      <td style="width: 457px;" height="16">Retrieves the text from the
+specified window.</td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">WinGetTitle</span></td>
+      <td style="width: 457px;" height="16">Retrieves the title of the
+specified
+window.</td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">WinHide</span></td>
+      <td style="width: 457px;" height="16">Hides the specified window.
+      </td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">WinKill</span></td>
+      <td style="width: 457px;" height="16">Forces the specified window
+to close.</td>
+      <td style="vertical-align: top; width: 124px;">_WindowFunctions()
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"><span class="colorgreen">WinMaximize</span></td>
+      <td style="width: 457px;" height="16">Enlarges the specified
+window to its
+maximum size. </td>
+      <td style="vertical-align: top; width: 124px;">_WinMaximize()<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">WinMenuSelectItem</td>
+      <td style="width: 457px;" height="16">Invokes a menu item from
+the menu
+bar of the specified window.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">WinMinimize</td>
+      <td style="width: 457px;" height="16">Collapses the specified
+window into
+a button on the task bar. </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">WinMinimizeAll</td>
+      <td style="width: 457px;" height="16">Minimizes all windows.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"> WinMinimizeAllUndo</td>
+      <td style="width: 457px;" height="16">Reverses the effect of a
+previous
+WinMinimizeAll.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">WinMove</td>
+      <td style="width: 457px;" height="16">Changes the position and/or
+size of
+the specified window. </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">WinRestore</td>
+      <td style="width: 457px;" height="16">Unminimizes or unmaximizes
+the
+specified window if it is minimized or maximized.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">WinSet</td>
+      <td style="width: 457px;" height="16">Makes a variety of changes
+to the
+specified window, such as "always on top" and transparency.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">WinSetTitle</td>
+      <td style="width: 457px;" height="16">Changes the title of the
+specified
+window.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">WinShow</td>
+      <td style="width: 457px;" height="16">Unhides the specified
+window.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">WinWait</td>
+      <td style="width: 457px;" height="16">Waits until the specified
+window
+exists.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">WinWaitActive</td>
+      <td style="width: 457px;" height="16">Waits until the specified
+window is
+active.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">WinWaitClose</td>
+      <td style="width: 457px;" height="16">Waits until the specified
+window
+does not exist.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">WinWaitNotActive</td>
+      <td style="width: 457px;" height="16">Waits until the specified
+window is
+not active.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#AllowSameLineComments</td>
+      <td style="width: 457px;" height="16">Only for AutoIt v2 (.aut)
+scripts:
+Allows a comment to appear on the same line as a command.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#ClipboardTimeout</td>
+      <td style="width: 457px;" height="16">Changes how long the script
+keeps
+trying to access the clipboard when the first attempt fails.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#CommentFlag</td>
+      <td style="width: 457px;" height="16">Changes the script's
+comment symbol
+from semicolon to some other string.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#ErrorStdOut</td>
+      <td style="width: 457px;" height="16">Sends any syntax error that
+prevents
+a script from launching to stdout rather than displaying a dialog.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#EscapeChar</td>
+      <td style="width: 457px;" height="16">Changes the script's escape
+character (for example: backslash vs. accent).</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#HotkeyInterval</td>
+      <td style="width: 457px;" height="16">Along with
+#MaxHotkeysPerInterval,
+specifies the rate of hotkey activations beyond which a warning dialog
+will be displayed.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"> #HotkeyModifierTimeout</td>
+      <td style="width: 457px;" height="16">Affects the behavior of
+hotkey
+modifiers: CTRL, ALT, WIN, and SHIFT.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#Hotstring</td>
+      <td style="width: 457px;" height="16">Changes hotstring options
+or ending
+characters.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">#IfWinActive /
+#IfWinExist</td>
+      <td style="width: 457px;" height="16">Creates context-sensitive
+hotkeys
+and hotstrings. Such hotkeys perform a different action (or none at
+all) depending on the type of window that is active or exists.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16"><span class="colorgreen">#Include</span></td>
+      <td style="width: 457px;" height="16">Causes the script to behave
+as
+though the specified file's contents are present at this exact position.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#InstallKeybdHook</td>
+      <td style="width: 457px;" height="16">Forces the unconditional
+installation of the keyboard hook.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#InstallMouseHook</td>
+      <td style="width: 457px;" height="16">Forces the unconditional
+installation of the mouse hook.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#KeyHistory</td>
+      <td style="width: 457px;" height="16">Sets the maximum number of
+keyboard
+and mouse events displayed by the KeyHistory window. You can set it to
+0 to disable key history.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#MaxHotkeysPerInterval</td>
+      <td style="width: 457px;" height="16">Along with #HotkeyInterval,
+specifies the rate of hotkey activations beyond which a warning dialog
+will be displayed.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#MaxMem</td>
+      <td style="width: 457px;" height="16">Sets the maximum capacity
+of each
+variable to the specified number of megabytes.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#MaxThreads</td>
+      <td style="width: 457px;" height="16">Sets the maximum number of
+simultaneous threads.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#MaxThreadsBuffer</td>
+      <td style="width: 457px;" height="16">Causes some or all hotkeys
+to buffer
+rather than ignore keypresses when their #MaxThreadsPerHotkey limit has
+been reached.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#MaxThreadsPerHotkey</td>
+      <td style="width: 457px;" height="16">Sets the maximum number of
+simultaneous threads per hotkey or hotstring.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16">#NoEnv</td>
+      <td style="width: 457px;" height="16">Avoids checking empty
+variables to
+see if they are environment variables (recommended for all new scripts).</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" class="larger" height="16"> #NoTrayIcon</td>
+      <td style="width: 457px;" height="16">Disables the showing of a
+tray icon.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#Persistent</td>
+      <td style="width: 457px;" height="16">Keeps a script permanently
+running
+(that is, until the user closes it or ExitApp is encountered).</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#SingleInstance</td>
+      <td style="width: 457px;" height="16">Determines whether a script
+is
+allowed to run again when it is already running.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#UseHook</td>
+      <td style="width: 457px;" height="16">Forces the use of the hook
+to
+implement all or some keyboard hotkeys.</td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="color: black;" height="16">#WinActivateForce</td>
+      <td style="width: 457px;" height="16">Skips the gentle method of
+of
+activating a window and goes straight to the forceful method. </td>
+      <td style="vertical-align: top; width: 124px;"><br>
+      </td>
+    </tr><tr>
+      <td style="vertical-align: top; color: black;">#DisableTapAndHold<br>
+      </td>
+      <td style="vertical-align: top;">Special command for CE devices to disable tap and hold<br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<h2>Special things:</h2>
+
+<ul>
+
+  <li>AHKCE is supporting the <span style="font-weight: bold;">tap-and-hold</span>
+gesture. You have to create a gui. If you tap and hold you can see the
+animation (dots cearting a circle around the mouse cursor) and the
+label <span style="font-weight: bold;">GuiContextMenu</span> is
+automatically called.<br>
+Update 30-06-09: If using the API SHRecognizeGesture(&amp;xxx)
+autohotkeyCE isn't working on PNA's any more.<br>
+  </li>
+</ul>
+
+<br>
+
+<span class="postbody"><span style="color: red;"></span></span><a href="index.htm"><span style="color: rgb(0, 0, 0);">&lt;&lt;Back</span></a><br>
+
+<br>
+
+<br>
+
+Last Modified 21-10-10<br>
+
+<br>
+
+</body></html>
